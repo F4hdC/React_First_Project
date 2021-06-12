@@ -9,16 +9,11 @@ class Contacts extends Component {
         return (
             <div className="div_contacts">
                 <h1>Contacts</h1>
-                <h3>Name of Contact: {name}</h3>
-                <ul>
-                    <li>Tel: {tel}</li>
-                    <li>Email: {email}</li>
-                </ul> 
             </div>
         )
     }
 }
-Contacts.defaultProps = {
+/* Contacts.defaultProps = {
     name : "Default props",
     tel  : "Default props",
     email: "Default props"
@@ -28,6 +23,6 @@ Contacts.propTypes = {
     name : PropTypes.string,
     tel : PropTypes.string,
     email : PropTypes.string
-}
+} */
 
 export default Contacts;
