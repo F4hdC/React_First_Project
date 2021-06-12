@@ -5,8 +5,9 @@ import Home from '../home/Home';
 import Features from '../Features/Features';
 import Pricing from '../pricing/Pricing';
 
+
 // Importo las rutas para la navegacion 
-import { BrowserRouter as Router, Route,Link,NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route,NavLink } from 'react-router-dom';
 
 // Para pasar parametros auna funcion, hay que añadirlos dentro de los parentesis
 const Navbar = (parametros) => {
@@ -21,7 +22,6 @@ const Navbar = (parametros) => {
             <li className="nav-item"><NavLink to="/" exact className="nav-link">Home</NavLink></li>
             <li className="nav-item"><NavLink to="/Features" className="nav-link">Features</NavLink></li>
             <li className="nav-item"><NavLink to="/Pricing" className="nav-link">Pricing</NavLink></li>
-            {/* <li className="nav-item"><Link to="#" className="nav-link">FAQs</Link></li> */}
             <li className="nav-item"><NavLink to="/About" className="nav-link">{title_about}</NavLink></li>
           </ul>
         </header>
