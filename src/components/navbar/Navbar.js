@@ -17,14 +17,14 @@ const Navbar = (parametros) => {
         <div className="container">
         <header className="d-flex justify-content-center py-3">
           <ul className="nav nav-pills">
-            <li className="nav-item"><Link to="/home" className="nav-link">Home</Link></li>
+            <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
             <li className="nav-item"><Link to="/Features" className="nav-link">Features</Link></li>
             <li className="nav-item"><Link to="/Pricing" className="nav-link">Pricing</Link></li>
             {/* <li className="nav-item"><Link to="#" className="nav-link">FAQs</Link></li> */}
             <li className="nav-item"><Link to="/About" className="nav-link">{title_about}</Link></li>
           </ul>
         </header>
-      <Route path="/home" component={Home} />
+      <Route path="/" exact component={Home} />
       <Route path="/Features" component={Features} />
       <Route path="/Pricing" component={Pricing} />
       <Route path="/About" component={about} /> 
