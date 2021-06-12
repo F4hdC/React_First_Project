@@ -11,4 +11,5 @@ const Navbar = (parametros) => {
     )
 }
 
+Navbar.defaultProps ={title:"Default title"}
 export default Navbar;

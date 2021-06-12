@@ -9,6 +9,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         </header>*/}
       <Navbar title="Title from Navbar: Contacts"/> 
+      <Navbar /> 
+      <Contacts />
       <Contacts name="David" tel="00332211" email="desde@clase.es"/>
       <Contacts name="Oscar" tel="02222222" email="desde2@clase.es"/>
     </div>

@@ -15,5 +15,9 @@ class Contacts extends Component {
         )
     }
 }
-
+Contacts.defaultProps = {
+    name : "Default props",
+    tel  : "Default props",
+    email: "Default props"
+}
 export default Contacts;
