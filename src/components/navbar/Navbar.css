@@ -1,0 +1,11 @@
+.h1_navbar{
+    text-align: center; 
+}
+body{
+    background-color: blanchedalmond;
+}
+h1{
+    display: inline-block;
+    background-color: blueviolet;
+    padding: 10px;
+}
