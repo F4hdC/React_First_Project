@@ -8,6 +8,7 @@ class Contacts extends Component {
         const {name,tel,email} = this.props;
         return (
             <div className="div_contacts">
+                <h1>Contacts</h1>
                 <h3>Name of Contact: {name}</h3>
                 <ul>
                     <li>Tel: {tel}</li>

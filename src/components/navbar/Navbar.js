@@ -1,23 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import  './Navbar.css';
+import Home from '../home/Home';
+import Features from '../Features/Features';
+import Pricing from '../pricing/Pricing';
 
-// Para pasar parametros a una funcion, hay que añadirlos dentro de los parentesis
+// Importo las rutas para la navegacion 
+import { BrowserRouter as Router, Route,Link } from 'react-router-dom';
+
+// Para pasar parametros auna funcion, hay que añadirlos dentro de los parentesis
 const Navbar = (parametros) => {
     // Creo un objeto para no repetir escribir parametros.....
-    const { title } = parametros;
+    const { about,title_about } = parametros;
     return (
+        <Router>
         <div className="container">
         <header className="d-flex justify-content-center py-3">
           <ul className="nav nav-pills">
-            <li className="nav-item"><a href="#" className="nav-link active" aria-current="page">Home</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">Features</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">Pricing</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">FAQs</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">About</a></li>
+            <li className="nav-item"><Link to="/home" className="nav-link">Home</Link></li>
+            <li className="nav-item"><Link to="/Features" className="nav-link">Features</Link></li>
+            <li className="nav-item"><Link to="/Pricing" className="nav-link">Pricing</Link></li>
+            {/* <li className="nav-item"><Link to="#" className="nav-link">FAQs</Link></li> */}
+            <li className="nav-item"><Link to="/About" className="nav-link">{title_about}</Link></li>
           </ul>
         </header>
+      <Route path="/home" component={Home} />
+      <Route path="/Features" component={Features} />
+      <Route path="/Pricing" component={Pricing} />
+      <Route path="/About" component={about} /> 
+
       </div>
+      </Router>
     )
 }
 
