@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 // Para pasar parametros a una funcion, hay que añadirlos dentro de los parentesis
 const Navbar = (parametros) => {
     // Creo un objeto para no repetir escribir parametros.....
@@ -12,4 +12,9 @@ const Navbar = (parametros) => {
 }
 
 Navbar.defaultProps ={title:"Default title"}
+
+Navbar.propTypes = {
+    title : PropTypes.string.isRequired
+}
+
 export default Navbar;

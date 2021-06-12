@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 
 // Para pasar los parametros a una clase, basta con llamarlo con this.props
 class Contacts extends Component {
@@ -20,4 +22,11 @@ Contacts.defaultProps = {
     tel  : "Default props",
     email: "Default props"
 }
+
+Contacts.propTypes = {
+    name : PropTypes.string,
+    tel : PropTypes.string,
+    email : PropTypes.string
+}
+
 export default Contacts;
