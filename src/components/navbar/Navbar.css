@@ -1,4 +1,16 @@
 
 body {
-    background-color: rgb(233, 216, 192) !important;
+    background-color: rgb(185, 182, 178) !important;
+}
+
+.active{
+    background-color: inherit !important;
+    color: white !important;
+}
+.nav{
+    background-color:lightsteelblue !important;
+    border-radius: 10px;  
+}
+.nav a{
+    color:black ;
 }
