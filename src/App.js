@@ -8,10 +8,9 @@ function App() {
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         </header>*/}
-      <Navbar title="Title from Properties"/> 
-      <Contacts title="Title from props Contacts"/>
-      <Contacts tel="00332211" email="desde@clase.es"/>
-      <Contacts tel="02222222" email="desde2@clase.es"/>
+      <Navbar title="Title from Navbar: Contacts"/> 
+      <Contacts name="David" tel="00332211" email="desde@clase.es"/>
+      <Contacts name="Oscar" tel="02222222" email="desde2@clase.es"/>
     </div>
   );
 }

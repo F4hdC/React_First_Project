@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 // Para pasar los parametros a una clase, basta con llamarlo con this.props
 class Contacts extends Component {
     render() {
+        const {name,tel,email} = this.props;
         return (
             <div>
-                <h1>{this.props.title}</h1>
+                <h3>Name of Contact: {name}</h3>
                 <ul>
-                    <li>Tel: {this.props.tel}</li>
-                    <li>Email: {this.props.email}</li>
+                    <li>Tel: {tel}</li>
+                    <li>Email: {email}</li>
                 </ul> 
             </div>
         )
